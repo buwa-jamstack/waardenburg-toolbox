@@ -42,7 +42,7 @@ body{
 {{ $assetPage := "tpl_category.jsx" }}
 {{ if .IsHome }}
   {{ $assetPage = "tpl_home.jsx" }}
-  <script>const dataLink = "{{ .Permalink }}/category/index.json"</script>
+  <script>const dataLink = "{{ .Permalink }}category/index.json"</script>
 {{else}}
   <script>const dataLink = "{{ .Permalink }}index.json"</script>
 {{ end }}
