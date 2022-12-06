@@ -1,0 +1,26 @@
+{
+    "title": "{{ .Title }}",
+    "type": "{{ .Type }}",
+    "permalink" : "{{ .Permalink }}",
+    "rel_permalink" : "{{ .RelPermalink }}",
+    "description" : "{{ .Description }}",
+    "image" : "{{ .Params.image }}",
+    "resources" : [
+    {{ range $index, $e := .Params.resource_links }}{{ if $index }},{{ end }}
+      {
+      "title": "{{.title}}",
+      "description": "{{.description}}",
+      "primary_action": "{{.primary_action}}",
+      "image": "{{.image}}",
+      "actions" : [
+      {{ range $index, $e := .actions }}{{ if $index }},{{ end }}
+        {
+        "title": "{{.title}}",
+        "url": "{{.url}}"
+        }
+      {{ end }}
+      ]
+      }
+    {{ end }}
+    ]
+}

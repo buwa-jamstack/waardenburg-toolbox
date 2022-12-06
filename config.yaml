@@ -1,0 +1,26 @@
+baseUrl: https://company-toolbox.quiqr.org
+languageCode: en
+title: Toolbox
+theme: company-toolbox
+disableKinds:
+  - taxonomyTerm
+  - taxonomy
+  - sitemap
+  - RSS
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+outputs:
+  home:
+    - html
+  section:
+    - json
+  page:
+    - json
+    - html
+logo: logo-waardenburg.png
+params:
+  logo: logo-waardenburg.png
+  resources: []
+  home_bg_image: peter-vroon-lu2FEBkK2OE-unsplash.jpg
