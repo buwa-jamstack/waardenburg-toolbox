@@ -9,9 +9,9 @@ resource_links:
       zitten in het Tuinhuis aan de linkerkant.
     resources: []
     actions:
-      - title: Neem contact op
+      - title: Mail systeembeheer
         url: mailto:systeembeheer@waardenburg.eco
-    image: systeembeheer.png
+    image: systeembeheer.jpg
   - title: Office, Teams en Outlook
     description: >-
       Uitleg hoe Teams en Outlook werken, online vs desktop app, digitaal
@@ -38,6 +38,8 @@ resource_links:
     image: SpotYou2.jpg
 
 ---
+
+
 
 
 
