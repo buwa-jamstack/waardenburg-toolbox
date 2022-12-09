@@ -35,14 +35,72 @@ resource_links:
     actions:
       - title: Open SpotYou
         url: https://www.spotyou.nl/dashboard
-    image: SpotYou2.jpg
+    image: SpotYou3.jpeg
   - title: VPN
     description: ''
     image: VPN3.png
     resources: []
     actions: []
+  - title: Nieuwsbrieven
+    description: ''
+    image: under const2.png
+    resources: []
+    actions: []
+  - title: Telefonie
+    description: ''
+    image: Telefonie2.png
+    resources: []
+    actions:
+      - title: Hipper-handleiding
+        url: >-
+          smb://buwadata02.buwa.nl/Buwa-algemeen/BW-Data/Instructies_veldformulieren_handleidingen/Hipper+
+          handleiding/Hipper handleiding.pdf
+      - title: Naar het buitenland?
+        url: ''
+  - title: Pdf samenvoegen
+    description: ''
+    image: under const2.png
+    resources: []
+    actions: []
+  - title: Digitale handtekening
+    description: ''
+    resources: []
+    actions: []
+  - title: WeTransfer
+    description: ''
+    image: WeTransfer3.png
+    resources: []
+    actions:
+      - title: Open instructie
+        url: >-
+          smb://buwadata02.buwa.nl/Buwa-algemeen/BW-Data/Instructies_veldformulieren_handleidingen/Wetransfer
+          Plus/Handleiding We transfer Plus-nov 2022.docx
+  - title: Mail en Agenda op je telefoon
+    description: ''
+    image: under const2.png
+    resources: []
+    actions: []
+  - title: Afwezigheidsbericht / vakantie
+    description: ''
+    image: under const2.png
+    resources: []
+    actions: []
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
