@@ -19,7 +19,7 @@ resource_links:
           smb://buwadata02.buwa.nl/Buwa-algemeen/BW-Data/ISO/ISO certificaten
           BuWa/ISO 9001/ISO 9001-2105 EIK041.02 Certificaat Bureau
           Waardenburg.pdf
-    image: ISO9001.png
+    image: ISO9001.2.png
   - title: Kwaliteitshandboek ISO 170025
     description: ''
     resources: []
@@ -28,7 +28,7 @@ resource_links:
         url: ''
       - title: ''
         url: ''
-    image: ISO17025.png
+    image: ISO17025.4.png
   - title: Melden kwaliteitsissues
     description: ''
     resources: []
@@ -47,9 +47,22 @@ resource_links:
     description: ''
     resources: []
     actions: []
-    image: klantcoach.png
+    image: klantcoach2.png
+image: kwaliteit.png
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

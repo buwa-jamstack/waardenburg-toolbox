@@ -1,7 +1,7 @@
 ---
 title: Personeel & Organisatie
 description: ''
-image: P&O.jpg
+image: PenO.png
 resource_links:
   - title: Organisatieschema
     description: ''
@@ -77,6 +77,8 @@ resource_links:
         url: ''
 
 ---
+
+
 
 
 

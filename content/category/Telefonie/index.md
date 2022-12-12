@@ -14,9 +14,11 @@ resource_links:
     primary_action: https://github.com/quiqr/
     actions: []
     image: Bellen buitenland.png
-image: Telefonie.png
+image: Telefonie2.png
 
 ---
+
+
 
 
 

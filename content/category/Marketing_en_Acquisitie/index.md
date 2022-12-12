@@ -1,7 +1,7 @@
 ---
 title: Marketing & Acquisitie
 description: ''
-image: Marketing.png
+image: Marketing3.png
 resource_links:
   - title: Acquisitiekalender
     description: ''
@@ -23,16 +23,26 @@ resource_links:
     image: under const.png
     resources: []
     actions: []
-  - title: ''
+  - title: Promovideo
     description: ''
     resources: []
     actions: []
-  - title: ''
+  - title: Rapportenoverzicht
+    description: ''
+    resources: []
+    actions: []
+  - title: Acquisitiechecklist
     description: ''
     resources: []
     actions: []
 
 ---
+
+
+
+
+
+
 
 
 
