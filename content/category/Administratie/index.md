@@ -10,7 +10,7 @@ resource_links:
       benaderen. CONTACTPERSOON: Lisette
     resources: []
     actions:
-      - title: Open Nmbrs
+      - title: Open
         url: >-
           https://fiscountloonservice.nmbrs.nl/applications/Common/Login.aspx?ReturnUrl=%2f
     image: nmbrs.png
@@ -18,13 +18,13 @@ resource_links:
     description: 'Declaraties dien je in via Nmbrs. CONTACTPERSOON: Sandra'
     resources: []
     actions:
-      - title: Open Nmbrs
+      - title: Open
         url: >-
           https://fiscountloonservice.nmbrs.nl/applications/Common/Login.aspx?ReturnUrl=%2f
-      - title: Handleiding Nmbrs
+      - title: Handleiding
         url: >-
           smb://buwadata02.buwa.nl/Buwa-algemeen/BW-Data/Instructies_veldformulieren_handleidingen/Salaris_Declaraties/filmpje_declareren-in-NMBRS.mp4
-      - title: Excel-formulieren
+      - title: Formulieren
         url: >-
           smb://buwadata02.buwa.nl/Buwa-algemeen/BW-Data/Instructies_veldformulieren_handleidingen/Salaris_Declaraties
     image: nmbrs.png
@@ -40,7 +40,7 @@ resource_links:
         url: ''
       - title: Wie kan betalingen doen?
         url: ''
-    image: under const2.png
+    image: under constr3.jpeg
   - title: Inkoopfacturen
     description: >-
       Inkoopfacturen goed- of afkeuren. Je gebruikersnaam is je Trias-naam, je
@@ -57,6 +57,8 @@ resource_links:
     image: Elvy.png
 
 ---
+
+
 
 
 

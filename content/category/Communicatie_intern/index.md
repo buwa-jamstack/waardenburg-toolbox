@@ -19,7 +19,11 @@ resource_links:
           smb://buwadata02.buwa.nl/Buwa-algemeen/BW-Data/Directie - info naar
           medewerkers/Beleidsverklaring Waardenburg Ecology 2022-09-01.pdf
   - title: Algemene vergaderingen
-    description: ''
+    description: >-
+      Twee keer per jaar is er een AV. De directie vertelt over de
+      bedrijfsresultaten, de plannen voor het volgende half jaar en
+      bijzonderheden. De presentaties van de afgelopen AV's kun je hier
+      terugkijken.
     resources: []
     actions:
       - title: Open
@@ -28,6 +32,8 @@ resource_links:
 image: communicatie.png
 
 ---
+
+
 
 
 
