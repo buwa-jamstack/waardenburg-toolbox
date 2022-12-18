@@ -1,13 +1,13 @@
 ---
 title: Loods & Materiaal
 description: ''
-image: loods6.jpg
+image: loods8.svg
 resource_links:
   - title: Aanwezigheid loodsbeheerder
     description: >-
       Zie instructie voor de aanwezigheid van de loodsmannen. Via button
       'contact' kun je direct een mail aan hen sturen.
-    image: under const2.png
+    image: loods8.svg
     resources: []
     actions:
       - title: Contact
@@ -18,7 +18,7 @@ resource_links:
           loods.docx
   - title: Reserveren materialen
     description: ''
-    image: under const2.png
+    image: loods8.svg
     resources: []
     actions:
       - title: Instructie
@@ -27,11 +27,17 @@ resource_links:
           loods.docx
   - title: Diepvries vogels
     description: ''
-    image: under const2.png
+    image: loods8.svg
     resources: []
     actions: []
 
 ---
+
+
+
+
+
+
 
 
 
