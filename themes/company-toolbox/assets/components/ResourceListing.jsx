@@ -40,8 +40,8 @@ export default class ResourceListing extends React.Component {
 
         <Grid container spacing={4} sx={{ py: 2 }}>
           {this.state.resources.map((resource) => (
-            <Grid item key={resource.title} xs={12} sm={7} md={5} lg={4} xl={3}>
-              <ResourceCard itemData={resource}/>
+            <Grid item key={resource.title} xs={12} sm={6} md={4} lg={3} xl={3}>
+              <ResourceCard itemData={resource} appCnf={this.props.appCnf}/>
             </Grid>
           ))}
         </Grid>

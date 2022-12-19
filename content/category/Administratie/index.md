@@ -14,6 +14,7 @@ resource_links:
         url: >-
           https://fiscountloonservice.nmbrs.nl/applications/Common/Login.aspx?ReturnUrl=%2f
     image: nmbrs.png
+    keywords: []
   - title: Onkosten declareren
     description: 'Declaraties dien je in via Nmbrs. CONTACTPERSOON: Sandra'
     resources: []
@@ -28,6 +29,7 @@ resource_links:
         url: >-
           smb://buwadata02.buwa.nl/Buwa-algemeen/BW-Data/Instructies_veldformulieren_handleidingen/Salaris_Declaraties
     image: nmbrs.png
+    keywords: []
   - title: Bestellen/kopen
     description: >-
       Directe betalingen IT en materiaalzaken door Hans de Jong, hotels,
@@ -41,6 +43,7 @@ resource_links:
       - title: Wie kan betalingen doen?
         url: ''
     image: under constr3.jpeg
+    keywords: []
   - title: Inkoopfacturen
     description: >-
       Inkoopfacturen goed- of afkeuren. Je gebruikersnaam is je Trias-naam, je
@@ -55,8 +58,11 @@ resource_links:
         url: >-
           smb://buwadata02.buwa.nl/Buwa-algemeen/BW-Data/Instructies_veldformulieren_handleidingen/Elvy/Elvyweb_alle_medewerkers/Facturen_goedafkeuren_in_Elvyweb.mp4
     image: Elvy.png
+    keywords: []
 
 ---
+
+
 
 
 

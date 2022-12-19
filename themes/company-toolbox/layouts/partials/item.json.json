@@ -3,13 +3,13 @@
     "type": "{{ .Type }}",
     "permalink" : "{{ .Permalink }}",
     "rel_permalink" : "{{ .RelPermalink }}",
-    "description" : "{{ .Description }}",
+    "description" : "{{ replace .Description "\n" "\\n" }}",
     "image" : "{{ .Params.image }}",
     "resources" : [
     {{ range $index, $e := .Params.resource_links }}{{ if $index }},{{ end }}
       {
       "title": "{{.title}}",
-      "description": "{{.description}}",
+      "description": "{{replace .description "\n" "\\n" }}",
       "primary_action": "{{.primary_action}}",
       "image": "{{.image}}",
       "actions" : [

@@ -52,42 +52,45 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function SearchAppBar() {
-  return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" color="white">
-        <Toolbar color="white">
-          <Box
-            className="Logo"
-            onClick={
-              ()=>window.location.href="/"
-            }
-            mx={2}
-            sx={{
-              cursor:'pointer',
-              width: 100,
-              height: 45,
-            }}
-          />
-          <Typography
-            variant="h4"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-          >
-            Toolbox
-          </Typography>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
+export default class SearchAppBar extends React.Component {
+
+  render(){
+    return (
+      <Box sx={{ flexGrow: 1 }}>
+        <AppBar position="static" color="white">
+          <Toolbar color="white">
+            <Box
+              className="Logo"
+              onClick={
+                ()=>window.location.href="/"
+              }
+              mx={2}
+              sx={{
+                cursor:'pointer',
+                width: parseInt(this.props.appCnf.logoWidth),
+                height: 45,
+              }}
             />
-          </Search>
-        </Toolbar>
-      </AppBar>
-    </Box>
-  );
+            <Typography
+              variant="h4"
+              noWrap
+              component="div"
+              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            >
+              { this.props.appCnf.title}
+            </Typography>
+            <Search>
+              <SearchIconWrapper>
+                <SearchIcon />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder="Search…"
+                inputProps={{ 'aria-label': 'search' }}
+              />
+            </Search>
+          </Toolbar>
+        </AppBar>
+      </Box>
+    );
+  }
 }

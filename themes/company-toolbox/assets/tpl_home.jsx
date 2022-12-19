@@ -18,8 +18,7 @@ root.render(
   <ThemeProvider theme={theme}>
     {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
     <CssBaseline />
-    <App>
-
+    <App appCnf={appCnf}>
       <BreadcrumHome/>
       <CategoryListing dataLink={dataLink} />
     </App>

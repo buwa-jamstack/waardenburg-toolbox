@@ -8,6 +8,7 @@
 .Logo {
   background-image: url(/images/{{.Site.Params.logo}});
   background-repeat: no-repeat;
+  background-size: contain;
 }
 html {
     height: 100%;
@@ -38,6 +39,26 @@ body{
 
 <meta charset="utf-8" />
 <link rel="shortcut icon" href="/favicon.png">
+
+<script>
+  var appCnf = {};
+  appCnf.logoWidth = "{{ .Site.Params.logo_width }}";
+  appCnf.title = "{{ .Site.Title }}";
+  appCnf.rewriteRules = [];
+
+{{ range .Site.Params.rewriteRules }}
+  var rule = {};
+
+  rule.regex = "{{ .regex }}";
+  rule.replace = "{{ .replace }}";
+  rule.condition = "{{ .agent_condition }}";
+
+  appCnf.rewriteRules.push(rule);
+
+{{ end }}
+
+
+</script>
 
 {{ $assetPage := "tpl_category.jsx" }}
 {{ if .IsHome }}

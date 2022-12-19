@@ -37,7 +37,7 @@ export default class CategoryCard extends React.Component {
               {this.props.itemData.title}
             </Typography>
             <Typography>
-              {this.props.itemData.description}
+            <div style={{height: 100, textOverflow: "ellipsis", overflow: 'hidden'}} dangerouslySetInnerHTML={{__html:this.props.itemData.description.replace(/(?:\r\n|\r|\n)/g, '<br/>') }} />
             </Typography>
           </CardContent>
         </Box>

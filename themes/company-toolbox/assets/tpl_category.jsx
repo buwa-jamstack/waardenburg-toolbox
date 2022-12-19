@@ -24,7 +24,7 @@ root.render(
 
     <App>
       <Breadcrum dataLink={dataLink} />
-      <ResourceListing dataLink={dataLink} />
+      <ResourceListing dataLink={dataLink} appCnf={appCnf} />
     </App>
 
   </ThemeProvider>

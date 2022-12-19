@@ -13,7 +13,7 @@ export default class CategoryListing extends React.Component {
   }
 
   readDataLink() {
-        console.log(this.props.dataLink)
+    //console.log(this.props.dataLink)
     return fetch(this.props.dataLink)
       .then((response) => response.json())
       .then((responseJson) => {

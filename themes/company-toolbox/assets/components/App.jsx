@@ -14,7 +14,7 @@ export default function App({children}) {
   return (
     <Container maxWidth="xl">
       <Box sx={{ my: 4 }}>
-        <SearchAppBar />
+        <SearchAppBar appCnf={appCnf}/>
         { children }
       </Box>
     </Container>

@@ -50,6 +50,15 @@ collections:
       type: string
       multiLine: true
 
+    - key: keywords
+      title: Keywords
+      type: chips
+
+    - key: info
+      type: info
+      content: enter a keyword and hit enter
+      size: small
+
     - key: image
       buttonTitle: select image
       path: /static/images
@@ -105,11 +114,36 @@ singles:
             title: Logo
             type: image-select
 
+          - key: logo_width
+            type: number
+
           - key: home_bg_image
             buttonTitle: select image
             path: /static/images
             title: Home Background Image
             type: image-select
+
+          - key: rewriteRules
+            title: Rewrite Rules
+            type: accordion
+            fields:
+              - arrayTitle: true
+                key: title
+                title: Title
+                type: string
+
+              - key: regex
+                title: Regex
+                type: string
+
+              - key: replace
+                type: string
+
+              - key: agent_condition
+                type: string
+
+
+
 
       - key: "favicon"
         title: "Favicon Image"
@@ -118,4 +152,5 @@ singles:
         path: "/static/"
         forceFileName: "favicon.png"
         extensions: ["png"]
+
 
