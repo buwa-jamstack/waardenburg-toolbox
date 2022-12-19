@@ -9564,18 +9564,18 @@
         value: theme2
       }, props.children);
     };
-    function withTheme(Component4) {
-      var componentName = Component4.displayName || Component4.name || "Component";
+    function withTheme(Component5) {
+      var componentName = Component5.displayName || Component5.name || "Component";
       var render = function render2(props, ref) {
         var theme2 = React57.useContext(ThemeContext);
-        return /* @__PURE__ */ React57.createElement(Component4, _extends2({
+        return /* @__PURE__ */ React57.createElement(Component5, _extends2({
           theme: theme2,
           ref
         }, props));
       };
       var WithTheme = /* @__PURE__ */ React57.forwardRef(render);
       WithTheme.displayName = "WithTheme(" + componentName + ")";
-      return _isolatedHnrs_dist_emotionReact_isolatedHnrs["default"](WithTheme, Component4);
+      return _isolatedHnrs_dist_emotionReact_isolatedHnrs["default"](WithTheme, Component5);
     }
     var typePropName = "__EMOTION_TYPE_PLEASE_DO_NOT_USE__";
     var createEmotionProps = function createEmotionProps2(type, props) {
@@ -10821,29 +10821,29 @@
       const name = match && match[1];
       return name || "";
     }
-    function getFunctionComponentName(Component4, fallback = "") {
-      return Component4.displayName || Component4.name || getFunctionName(Component4) || fallback;
+    function getFunctionComponentName(Component5, fallback = "") {
+      return Component5.displayName || Component5.name || getFunctionName(Component5) || fallback;
     }
     function getWrappedName(outerType, innerType, wrapperName) {
       const functionName = getFunctionComponentName(innerType);
       return outerType.displayName || (functionName !== "" ? `${wrapperName}(${functionName})` : wrapperName);
     }
-    function getDisplayName(Component4) {
-      if (Component4 == null) {
+    function getDisplayName(Component5) {
+      if (Component5 == null) {
         return void 0;
       }
-      if (typeof Component4 === "string") {
-        return Component4;
+      if (typeof Component5 === "string") {
+        return Component5;
       }
-      if (typeof Component4 === "function") {
-        return getFunctionComponentName(Component4, "Component");
+      if (typeof Component5 === "function") {
+        return getFunctionComponentName(Component5, "Component");
       }
-      if (typeof Component4 === "object") {
-        switch (Component4.$$typeof) {
+      if (typeof Component5 === "object") {
+        switch (Component5.$$typeof) {
           case _reactIs.ForwardRef:
-            return getWrappedName(Component4, Component4.render, "ForwardRef");
+            return getWrappedName(Component5, Component5.render, "ForwardRef");
           case _reactIs.Memo:
-            return getWrappedName(Component4, Component4.type, "memo");
+            return getWrappedName(Component5, Component5.type, "memo");
           default:
             return void 0;
         }
@@ -11070,11 +11070,11 @@
     });
     exports.default = requirePropFactory;
     var _extends2 = _interopRequireDefault(require_extends());
-    function requirePropFactory(componentNameInError, Component4) {
+    function requirePropFactory(componentNameInError, Component5) {
       if (true) {
         return () => null;
       }
-      const prevPropTypes = Component4 ? (0, _extends2.default)({}, Component4.propTypes) : null;
+      const prevPropTypes = Component5 ? (0, _extends2.default)({}, Component5.propTypes) : null;
       const requireProp = (requiredProp) => (props, propName, componentName, location, propFullName, ...args) => {
         const propFullNameSafe = propFullName || propName;
         const defaultTypeChecker = prevPropTypes == null ? void 0 : prevPropTypes[propFullNameSafe];
@@ -14686,7 +14686,7 @@
               }, other));
             };
           }
-          const Component4 = defaultStyledResolver(transformedStyleArg, ...expressionsWithDefaultTheme);
+          const Component5 = defaultStyledResolver(transformedStyleArg, ...expressionsWithDefaultTheme);
           if (false) {
             let displayName;
             if (componentName) {
@@ -14695,9 +14695,9 @@
             if (displayName === void 0) {
               displayName = `Styled(${(0, _utils.getDisplayName)(tag)})`;
             }
-            Component4.displayName = displayName;
+            Component5.displayName = displayName;
           }
-          return Component4;
+          return Component5;
         };
         if (defaultStyledResolver.withConfig) {
           muiStyledResolver.withConfig = defaultStyledResolver.withConfig;
@@ -33353,7 +33353,7 @@ Please use another name.` : (0, _utils.formatMuiErrorMessage)(18));
       return newObj;
     }
     function createSvgIcon2(path, displayName) {
-      function Component4(props, ref) {
+      function Component5(props, ref) {
         return /* @__PURE__ */ (0, _jsxRuntime.jsx)(_SvgIcon.default, (0, _extends2.default)({
           "data-testid": `${displayName}Icon`,
           ref
@@ -33362,10 +33362,10 @@ Please use another name.` : (0, _utils.formatMuiErrorMessage)(18));
         }));
       }
       if (false) {
-        Component4.displayName = `${displayName}Icon`;
+        Component5.displayName = `${displayName}Icon`;
       }
-      Component4.muiName = _SvgIcon.default.muiName;
-      return /* @__PURE__ */ React57.memo(/* @__PURE__ */ React57.forwardRef(Component4));
+      Component5.muiName = _SvgIcon.default.muiName;
+      return /* @__PURE__ */ React57.memo(/* @__PURE__ */ React57.forwardRef(Component5));
     }
   });
 
@@ -34859,10 +34859,10 @@ Please use another name.` : import_utils4.formatMuiErrorMessage(18));
       variant,
       variantMapping
     });
-    const Component4 = component || (paragraph ? "p" : variantMapping[variant] || defaultVariantMapping[variant]) || "span";
+    const Component5 = component || (paragraph ? "p" : variantMapping[variant] || defaultVariantMapping[variant]) || "span";
     const classes = useUtilityClasses2(ownerState);
     return /* @__PURE__ */ import_jsx_runtime5.jsx(TypographyRoot, _extends({
-      as: Component4,
+      as: Component5,
       ref,
       ownerState,
       className: import_clsx2.default(classes.root, className)
@@ -36142,33 +36142,36 @@ Please use another name.` : import_utils4.formatMuiErrorMessage(18));
       }
     }
   }));
-  function SearchAppBar() {
-    return /* @__PURE__ */ React13.createElement(Box_default, {
-      sx: {flexGrow: 1}
-    }, /* @__PURE__ */ React13.createElement(AppBar_default, {
-      position: "static",
-      color: "white"
-    }, /* @__PURE__ */ React13.createElement(Toolbar_default, {
-      color: "white"
-    }, /* @__PURE__ */ React13.createElement(Box_default, {
-      className: "Logo",
-      onClick: () => window.location.href = "/",
-      mx: 2,
-      sx: {
-        cursor: "pointer",
-        width: 100,
-        height: 45
-      }
-    }), /* @__PURE__ */ React13.createElement(Typography_default, {
-      variant: "h4",
-      noWrap: true,
-      component: "div",
-      sx: {flexGrow: 1, display: {xs: "none", sm: "block"}}
-    }, "Toolbox"), /* @__PURE__ */ React13.createElement(Search, null, /* @__PURE__ */ React13.createElement(SearchIconWrapper, null, /* @__PURE__ */ React13.createElement(import_Search.default, null)), /* @__PURE__ */ React13.createElement(StyledInputBase, {
-      placeholder: "Search\u2026",
-      inputProps: {"aria-label": "search"}
-    })))));
-  }
+  var SearchAppBar = class extends React13.Component {
+    render() {
+      return /* @__PURE__ */ React13.createElement(Box_default, {
+        sx: {flexGrow: 1}
+      }, /* @__PURE__ */ React13.createElement(AppBar_default, {
+        position: "static",
+        color: "white"
+      }, /* @__PURE__ */ React13.createElement(Toolbar_default, {
+        color: "white"
+      }, /* @__PURE__ */ React13.createElement(Box_default, {
+        className: "Logo",
+        onClick: () => window.location.href = "/",
+        mx: 2,
+        sx: {
+          cursor: "pointer",
+          width: parseInt(this.props.appCnf.logoWidth),
+          height: 45
+        }
+      }), /* @__PURE__ */ React13.createElement(Typography_default, {
+        variant: "h4",
+        noWrap: true,
+        component: "div",
+        sx: {flexGrow: 1, display: {xs: "none", sm: "block"}}
+      }, this.props.appCnf.title), /* @__PURE__ */ React13.createElement(Search, null, /* @__PURE__ */ React13.createElement(SearchIconWrapper, null, /* @__PURE__ */ React13.createElement(import_Search.default, null)), /* @__PURE__ */ React13.createElement(StyledInputBase, {
+        placeholder: "Search\u2026",
+        inputProps: {"aria-label": "search"}
+      })))));
+    }
+  };
+  var SearchAppBar_default = SearchAppBar;
 
   // ns-hugo:/home/runner/work/waardenburg-toolbox/waardenburg-toolbox/themes/company-toolbox/assets/components/App.jsx
   function App({children}) {
@@ -36176,7 +36179,9 @@ Please use another name.` : import_utils4.formatMuiErrorMessage(18));
       maxWidth: "xl"
     }, /* @__PURE__ */ React14.createElement(Box_default, {
       sx: {my: 4}
-    }, /* @__PURE__ */ React14.createElement(SearchAppBar, null), children));
+    }, /* @__PURE__ */ React14.createElement(SearchAppBar_default, {
+      appCnf
+    }), children));
   }
 
   // ns-hugo:/home/runner/work/waardenburg-toolbox/waardenburg-toolbox/themes/company-toolbox/assets/components/ResourceListing.jsx
@@ -36925,20 +36930,20 @@ Please use another name.` : import_utils4.formatMuiErrorMessage(18));
       }
     };
     _proto.render = function render() {
-      var _this$props = this.props, Component4 = _this$props.component, childFactory2 = _this$props.childFactory, props = _objectWithoutPropertiesLoose(_this$props, ["component", "childFactory"]);
+      var _this$props = this.props, Component5 = _this$props.component, childFactory2 = _this$props.childFactory, props = _objectWithoutPropertiesLoose(_this$props, ["component", "childFactory"]);
       var contextValue = this.state.contextValue;
       var children = values(this.state.children).map(childFactory2);
       delete props.appear;
       delete props.enter;
       delete props.exit;
-      if (Component4 === null) {
+      if (Component5 === null) {
         return /* @__PURE__ */ import_react4.default.createElement(TransitionGroupContext_default.Provider, {
           value: contextValue
         }, children);
       }
       return /* @__PURE__ */ import_react4.default.createElement(TransitionGroupContext_default.Provider, {
         value: contextValue
-      }, /* @__PURE__ */ import_react4.default.createElement(Component4, props, children));
+      }, /* @__PURE__ */ import_react4.default.createElement(Component5, props, children));
     };
     return TransitionGroup2;
   }(import_react4.default.Component);
@@ -39631,7 +39636,7 @@ Please use another name.` : import_utils4.formatMuiErrorMessage(18));
   // node_modules/@mui/material/esm/utils/createSvgIcon.js
   var import_jsx_runtime33 = __toModule(require_jsx_runtime());
   function createSvgIcon(path, displayName) {
-    function Component4(props, ref) {
+    function Component5(props, ref) {
       return /* @__PURE__ */ import_jsx_runtime33.jsx(SvgIcon_default, _extends({
         "data-testid": `${displayName}Icon`,
         ref
@@ -39640,10 +39645,10 @@ Please use another name.` : import_utils4.formatMuiErrorMessage(18));
       }));
     }
     if (false) {
-      Component4.displayName = `${displayName}Icon`;
+      Component5.displayName = `${displayName}Icon`;
     }
-    Component4.muiName = SvgIcon_default.muiName;
-    return /* @__PURE__ */ React35.memo(/* @__PURE__ */ React35.forwardRef(Component4));
+    Component5.muiName = SvgIcon_default.muiName;
+    return /* @__PURE__ */ React35.memo(/* @__PURE__ */ React35.forwardRef(Component5));
   }
 
   // node_modules/@mui/material/esm/internal/svg-icons/SuccessOutlined.js
@@ -40770,14 +40775,14 @@ Please use another name.` : import_utils4.formatMuiErrorMessage(18));
     }
     render() {
       let image = this.props.itemData.image;
-      console.log(image);
       if (image.includes("no value")) {
         image = "scholver.jpg";
       }
+      const rules = this.props.appCnf.rewriteRules || [];
       return /* @__PURE__ */ React49.createElement(Card_default, {
         sx: {
-          width: 350,
-          height: 480,
+          width: 300,
+          height: 400,
           display: "flex",
           flexDirection: "column"
         }
@@ -40814,10 +40819,16 @@ Please use another name.` : import_utils4.formatMuiErrorMessage(18));
         id: "alert-dialog-title"
       }, this.props.itemData.title), /* @__PURE__ */ React49.createElement(DialogContent_default, null, /* @__PURE__ */ React49.createElement(DialogContent_default, {
         id: "alert-dialog-description"
-      }, this.props.itemData.description)), /* @__PURE__ */ React49.createElement(DialogActions_default, null, this.props.itemData.actions.map((actionItem, i) => /* @__PURE__ */ React49.createElement(Button_default, {
+      }, /* @__PURE__ */ React49.createElement("div", {
+        dangerouslySetInnerHTML: {__html: this.props.itemData.description.replace(/(?:\r\n|\r|\n)/g, "<br/>")}
+      }))), /* @__PURE__ */ React49.createElement(DialogActions_default, null, this.props.itemData.actions.map((actionItem, i) => /* @__PURE__ */ React49.createElement(Button_default, {
         key: actionItem.title,
         onClick: () => {
-          window.open(actionItem.url);
+          let url = actionItem.url;
+          rules.forEach((rule) => {
+            url = url.replace(rule.regex, rule.replace);
+          });
+          window.open(url);
         },
         size: "small"
       }, i === 0 ? "\u25BA " : "", actionItem.title)), /* @__PURE__ */ React49.createElement(Button_default, {
@@ -40828,7 +40839,11 @@ Please use another name.` : import_utils4.formatMuiErrorMessage(18));
       }, "Close"))), /* @__PURE__ */ React49.createElement(CardActionArea_default, {
         onClick: (e) => {
           if (this.props.itemData.actions.length > 0) {
-            window.open(this.props.itemData.actions[0].url);
+            let url = this.props.itemData.actions[0].url;
+            rules.forEach((rule) => {
+              url = url.replace(rule.regex, rule.replace);
+            });
+            window.open(url);
           } else {
             this.setState({snackbarNoLinkOpen: true});
           }
@@ -40836,12 +40851,13 @@ Please use another name.` : import_utils4.formatMuiErrorMessage(18));
       }, /* @__PURE__ */ React49.createElement(CardMedia_default, {
         component: "img",
         sx: {
-          maxHeight: 200
+          minHeight: 150,
+          maxHeight: 150
         },
         image: "/images/" + image,
         alt: "img: " + this.props.itemData.title
       }), /* @__PURE__ */ React49.createElement(CardContent_default, {
-        sx: {height: 220}
+        sx: {height: 170}
       }, /* @__PURE__ */ React49.createElement(Typography_default, {
         gutterBottom: true,
         variant: "h5",
@@ -40863,11 +40879,16 @@ Please use another name.` : import_utils4.formatMuiErrorMessage(18));
           this.setState({dialogOpen: true});
         }
       }, /* @__PURE__ */ React49.createElement(import_Info.default, null)))), /* @__PURE__ */ React49.createElement(Typography_default, null, /* @__PURE__ */ React49.createElement("div", {
-        style: {height: 150, textOverflow: "ellipsis", overflow: "hidden"}
-      }, this.props.itemData.description)))), /* @__PURE__ */ React49.createElement(CardActions_default, null, this.props.itemData.actions.map((actionItem, i) => /* @__PURE__ */ React49.createElement(Button_default, {
+        style: {height: 100, textOverflow: "ellipsis", overflow: "hidden"},
+        dangerouslySetInnerHTML: {__html: this.props.itemData.description.replace(/(?:\r\n|\r|\n)/g, "<br/>")}
+      })))), /* @__PURE__ */ React49.createElement(CardActions_default, null, this.props.itemData.actions.map((actionItem, i) => /* @__PURE__ */ React49.createElement(Button_default, {
         key: actionItem.title,
         onClick: () => {
-          window.open(actionItem.url);
+          let url = actionItem.url;
+          rules.forEach((rule) => {
+            url = url.replace(rule.regex, rule.replace);
+          });
+          window.open(url);
         },
         size: "small"
       }, i === 0 ? "\u25BA " : "", actionItem.title))));
@@ -40909,12 +40930,13 @@ Please use another name.` : import_utils4.formatMuiErrorMessage(18));
         item: true,
         key: resource.title,
         xs: 12,
-        sm: 7,
-        md: 5,
-        lg: 4,
+        sm: 6,
+        md: 4,
+        lg: 3,
         xl: 3
       }, /* @__PURE__ */ React50.createElement(ResourceCard_default, {
-        itemData: resource
+        itemData: resource,
+        appCnf: this.props.appCnf
       })))));
     }
   };
@@ -41386,6 +41408,7 @@ Please use another name.` : import_utils4.formatMuiErrorMessage(18));
   }, /* @__PURE__ */ React56.createElement(CssBaseline_default, null), /* @__PURE__ */ React56.createElement(App, null, /* @__PURE__ */ React56.createElement(Breadcrum_default, {
     dataLink
   }), /* @__PURE__ */ React56.createElement(ResourceListing_default, {
-    dataLink
+    dataLink,
+    appCnf
   }))));
 })();
